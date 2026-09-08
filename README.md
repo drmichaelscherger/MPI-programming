@@ -31,7 +31,7 @@ Each directory contains a short README so material can be added incrementally wi
 11. Measurement, communication cost, scalability, and load balance
 12. Advanced topics for a Parallel Computing course
 
-The initial course material emphasizes portable MPI concepts and local or general-purpose MPI execution. Cluster scheduler material, including SLURM, is intentionally outside the scope of this repository.
+The initial course material emphasizes portable MPI concepts and local or general-purpose MPI execution. Cluster scheduler material is outside the scope of this repository.
 
 ## Prerequisites
 
@@ -47,4 +47,13 @@ make clean
 
 ## Current status
 
-This is the initial repository skeleton. Notes, examples, labs, exercises, and solutions will be developed together so that explanations and runnable code remain aligned.
+Units 01–04 are ready for use:
+
+| Unit | Notes | Examples | Lab | Exercises |
+| --- | --- | --- | --- | --- |
+| 01 — Distributed Memory and SPMD | [Notes](notes/01-distributed-memory-spmd/) | [Hello](examples/01-hello/) | [Process Report](labs/01-process-report/) | [Exercises](exercises/01-distributed-memory-spmd/) |
+| 02 — MPI Fundamentals | [Notes](notes/02-mpi-fundamentals/) | [Process Info](examples/02-process-info/) | [Communicator Inventory](labs/02-communicator-inventory/) | [Exercises](exercises/02-mpi-fundamentals/) |
+| 03 — Point-to-Point Communication | [Notes](notes/03-point-to-point/) | [Send/Receive](examples/03-send-recv/), [Ping-Pong](examples/03-ping-pong/) | [Message Chain](labs/03-message-chain/) | [Exercises](exercises/03-point-to-point/) |
+| 04 — Communication Patterns | [Notes](notes/04-communication-patterns/) | [Ring](examples/04-ring/), [Worker Pool](examples/04-worker-pool/) | [Distributed Search](labs/04-distributed-search/) | [Exercises](exercises/04-communication-patterns/) |
+
+Instructor reference implementations and answer keys are in [`solutions/`](solutions/).
